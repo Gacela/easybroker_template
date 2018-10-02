@@ -40,8 +40,6 @@ header
 
 .header-img {
   height: 37rem;
-  background-position: center;
-  background-size: cover;
 }
 
 #header-img-1 {
@@ -56,6 +54,11 @@ header
   background: linear-gradient(rgba(70, 42, 22, 0.25),rgba(70, 42, 22, 0.25)), url("img/header-img-3.jpg");
 }
 
+#header-img-1, #header-img-2, #header-img-3 {
+  background-position: center, center;
+  background-size: auto, cover;
+}
+
 #header, #header-content {
   height: 38.5rem;
 }
@@ -67,7 +70,7 @@ Featured
   height: 24.75rem;
 }
 
-.featured-img{
+.featured-img {
   height: 22.5rem;
   background-position: center;
   background-size: cover;
@@ -77,10 +80,27 @@ Featured
   background-image: url("img/featured-img-1.jpg");
 }
 
+#featured-img-1:hover {
+  background: linear-gradient(rgba(70, 42, 22, 0.15),rgba(70, 42, 22, 0.15)), url("img/featured-img-1.jpg");
+}
+
 #featured-img-2 {
   background-image: url("img/featured-img-2.jpg");
 }
 
+#featured-img-2:hover {
+  background: linear-gradient(rgba(70, 42, 22, 0.15),rgba(70, 42, 22, 0.15)), url("img/featured-img-2.jpg");
+}
+
 #featured-img-3 {
   background-image: url("img/featured-img-3.jpg");
+}
+
+#featured-img-3:hover {
+  background: linear-gradient(rgba(70, 42, 22, 0.15),rgba(70, 42, 22, 0.15)), url("img/featured-img-3.jpg");
+}
+
+#featured-img-1:hover, #featured-img-2:hover, #featured-img-3:hover {
+  background-position: center, center;
+  background-size: auto, cover;
 }
