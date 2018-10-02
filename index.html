@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nombre de la inmobiliaria</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav class="flex items-center justify-between flex-wrap md:flex-no-wrap py-8 px-6">
+      <div class="flex items-center flex-no-shrink mr-6 w-1/6">
+        <a href="#" class="font-serif text-orange-dark no-underline text-4xl leading-none text-center">Nombre de la inmobiliaria</a>
+      </div>
+      <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 border rounded text-grey-dark hover:text-grey-darker hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div class="w-5/6 block flex-grow lg:flex lg:justify-end lg:items-center lg:w-auto">
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-grey-dark hover:text-grey-darker no-underline mx-4 xl:mx-6">
+          Propiedades
+        </a>
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-grey-dark hover:text-grey-darker no-underline mx-4 xl:mx-6">
+          Vende o renta con nosotros
+        </a>
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-grey-dark hover:text-grey-darker no-underline mx-4 xl:mx-6">
+          ¿Quiénes somos?
+        </a>
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-grey-dark hover:text-grey-darker no-underline mx-4 xl:mx-6">
+          Contacto
+        </a>
+        <div class="inline-block text-orange-dark text-center ml-6">
+          <p href="#" class="font-serif text-4xl">
+            55555-55555
+          </p>
+          <p>
+            lorem@ipsum.com
+          </p>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <!-- Background -->
+    <div id="header" class="w-full relative">
+      <div id="header-bg" class="hidden sm:block absolute bg-orange-dark w-full my-6">
+      </div>
+      <div class="absolute pin container mx-auto">
+        <div class="md:w-5/6 lg:w-full m-auto flex flex-no-wrap">
+          <div id="header-img-1" class="header-img hidden sm:block sm:w-1/3"></div>
+          <div id="header-img-2" class="header-img w-full sm:w-1/3 mt-6"></div>
+          <div id="header-img-3" class="header-img hidden sm:block sm:w-1/3"></div>
+        </div>
+      </div>
+      <!-- Content -->
+      <div id="header-content" class="container mx-auto absolute pin w-full flex flex-col">
+        <div class="w-2/3 m-auto text-center">
+          <h1 class="font-serif font-normal text-6xl text-white text-shadow leading-none">Encuentra tu próxima casa</h1>
+          <form class="flex flex-wrap mt-6">
+            <div class="relative w-full sm:w-1/2">
+              <select class="block appearance-none w-full bg-white border border-grey-lighter text-grey-darker leading-tight py-4 px-6 pr-8 rounded-l-sm focus:bg-grey-lighter focus:border-grey shadow focus:shadow-md">
+                <option>Venta</option>
+                <option>Renta</option>
+              </select>
+              <div class="absolute pin-y pin-r flex items-center px-6 text-orange-dark pointer-events-none">
+                <svg class="fill-current h-3 w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+              </div> <!-- /.absolute -->
+            </div> <!-- /.relative -->
+            <div class="relative w-full sm:w-1/2">
+              <select class="block appearance-none w-full bg-white border border-grey-lighter text-grey-darker leading-tight py-4 px-6 pr-8 rounded-r-sm focus:bg-grey-lighter focus:border-grey shadow focus:shadow-md">
+                <option>Casa</option>
+                <option>Departamento</option>
+                <option>Oficina</option>
+              </select>
+              <div class="absolute pin-y pin-r flex items-center px-6 text-orange-dark pointer-events-none">
+                <svg class="fill-current h-3 w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+              </div> <!-- /.absolute -->
+            </div> <!-- /.relative -->
+            <div class="mt-4 w-full text-center">
+              <button class="bg-orange-dark text-white leading-tight py-4 px-6 rounded-sm hover:bg-orange-darker shadow-md hover:shadow">Buscar Propiedades</button>
+            </div> <!-- /.w-full -->
+          </form>
+        </div> <!-- /.w-2/3 -->
+      </div> <!-- /#header-content -->
+    </div> <!-- /.relative -->
+  <div class="container mx-auto my-6 flex flex-wrap">
+    <div class="featured w-1/2 relative">
+      <a href="#" id="featured-img-1" class="block no-underline featured-img absolute pin bg-black m-3">
+      </a><!-- /.featured-img-->
+      <div class="absolute pin-t pin-r m-1 bg-orange-dark hover:bg-orange-darker text-white leading-tight py-4 px-6 shadow">
+        Venta
+      </div><!-- /.absolute -->
+      <a href="#" class="block no-underline absolute pin-b pin-l w-1/2 m-1 bg-white hover:bg-grey-lightest py-4 px-6 shadow hover:shadow-md">
+        <p class="text-orange-dark font-serif text-4xl my-2">$7,200,000</p>
+        <p class="text-grey-darkest my-2">Departamento en Polanco, Miguel Hidalgo</p>
+        <p class="text-xs text-grey-darker my-3">2 recs. 2 baños 165 m² de constr.</p>
+      </a><!-- /.absolute -->
+    </div><!-- /.relative -->
+    <div class="featured w-1/2 relative">
+      <a href="#" id="featured-img-2" class="block no-underline featured-img absolute pin bg-black m-3">
+      </a><!-- /.featured-img-->
+      <div class="absolute pin-t pin-r m-1 bg-orange-dark hover:bg-orange-darker text-white leading-tight py-4 px-6 shadow">
+        Venta
+      </div><!-- /.absolute -->
+      <a href="#" class="block no-underline absolute pin-b pin-l w-1/2 m-1 bg-white hover:bg-grey-lightest py-4 px-6 shadow hover:shadow-md">
+        <p class="text-orange-dark font-serif text-4xl my-2">$7,200,000</p>
+        <p class="text-grey-darkest my-2">Departamento en Polanco, Miguel Hidalgo</p>
+        <p class="text-xs text-grey-darker my-3">2 recs. 2 baños 165 m² de constr.</p>
+      </a><!-- /.absolute -->
+    </div><!-- /.relative -->
+    <div class="featured w-1/2 relative">
+      <a href="#" id="featured-img-3" class="block no-underline featured-img absolute pin bg-black m-3">
+      </a><!-- /.featured-img-->
+      <div class="absolute pin-t pin-r m-1 bg-orange-dark hover:bg-orange-darker text-white leading-tight py-4 px-6 shadow">
+        Venta
+      </div><!-- /.absolute -->
+      <a href="#" class="block no-underline absolute pin-b pin-l w-1/2 m-1 bg-white hover:bg-grey-lightest py-4 px-6 shadow hover:shadow-md">
+        <p class="text-orange-dark font-serif text-4xl my-2">$7,200,000</p>
+        <p class="text-grey-darkest my-2">Departamento en Polanco, Miguel Hidalgo</p>
+        <p class="text-xs text-grey-darker my-3">2 recs. 2 baños 165 m² de constr.</p>
+      </a><!-- /.absolute -->
+    </div><!-- /.relative -->
+    <div class="featured w-1/2 relative">
+      <a href="#" id="featured-img-1" class="block no-underline featured-img absolute pin bg-black m-3">
+      </a><!-- /.featured-img-->
+      <div class="absolute pin-t pin-r m-1 bg-orange-dark hover:bg-orange-darker text-white leading-tight py-4 px-6 shadow">
+        Venta
+      </div><!-- /.absolute -->
+      <a href="#" class="block no-underline absolute pin-b pin-l w-1/2 m-1 bg-white hover:bg-grey-lightest py-4 px-6 shadow hover:shadow-md">
+        <p class="text-orange-dark font-serif text-4xl my-2">$7,200,000</p>
+        <p class="text-grey-darkest my-2">Departamento en Polanco, Miguel Hidalgo</p>
+        <p class="text-xs text-grey-darker my-3">2 recs. 2 baños 165 m² de constr.</p>
+      </a><!-- /.absolute -->
+    </div><!-- /.relative -->
+    <div class="featured w-1/2 relative">
+      <a href="#" id="featured-img-2" class="block no-underline featured-img absolute pin bg-black m-3">
+      </a><!-- /.featured-img-->
+      <div class="absolute pin-t pin-r m-1 bg-orange-dark hover:bg-orange-darker text-white leading-tight py-4 px-6 shadow">
+        Venta
+      </div><!-- /.absolute -->
+      <a href="#" class="block no-underline absolute pin-b pin-l w-1/2 m-1 bg-white hover:bg-grey-lightest py-4 px-6 shadow hover:shadow-md">
+        <p class="text-orange-dark font-serif text-4xl my-2">$7,200,000</p>
+        <p class="text-grey-darkest my-2">Departamento en Polanco, Miguel Hidalgo</p>
+        <p class="text-xs text-grey-darker my-3">2 recs. 2 baños 165 m² de constr.</p>
+      </a><!-- /.absolute -->
+    </div><!-- /.relative -->
+    <div class="featured w-1/2 relative">
+      <a href="#" id="featured-img-3" class="block no-underline featured-img absolute pin bg-black m-3">
+      </a><!-- /.featured-img-->
+      <div class="absolute pin-t pin-r m-1 bg-orange-dark hover:bg-orange-darker text-white leading-tight py-4 px-6 shadow">
+        Venta
+      </div><!-- /.absolute -->
+      <a href="#" class="block no-underline absolute pin-b pin-l w-1/2 m-1 bg-white hover:bg-grey-lightest py-4 px-6 shadow hover:shadow-md">
+        <p class="text-orange-dark font-serif text-4xl my-2">$7,200,000</p>
+        <p class="text-grey-darkest my-2">Departamento en Polanco, Miguel Hidalgo</p>
+        <p class="text-xs text-grey-darker my-3">2 recs. 2 baños 165 m² de constr.</p>
+      </a><!-- /.absolute -->
+    </div><!-- /.relative -->
+  </div>
+  </body>
+</html>

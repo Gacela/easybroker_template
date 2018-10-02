@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri|Source+Sans+Pro');
+body {
+  @apply text-lg;
+  /* background-image: url("Desktop.png");
+  background-position: top center;
+  background-repeat: no-repeat; */
+}
+
+/*
+Tailwind CDN overrides
+*/
+
+.font-sans {
+  font-family: "Source sans pro", sans-serif;
+}
+
+.font-serif {
+  font-family: "Amiri", serif;
+}
+
+/*
+Text
+*/
+
+.text-6xl {
+  font-size: 4rem;
+}
+
+.text-shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 16px rgba(70, 42, 22, 0.5);
+}
+
+/*
+header
+*/
+
+#header-bg {
+  height: 34rem;
+}
+
+.header-img {
+  height: 37rem;
+  background-position: center;
+  background-size: cover;
+}
+
+#header-img-1 {
+  background: linear-gradient(rgba(70, 42, 22, 0.25),rgba(70, 42, 22, 0.25)), url("img/header-img-1.jpg");
+}
+
+#header-img-2 {
+  background: linear-gradient(rgba(70, 42, 22, 0.25),rgba(70, 42, 22, 0.25)), url("img/header-img-2.jpg");
+}
+
+#header-img-3 {
+  background: linear-gradient(rgba(70, 42, 22, 0.25),rgba(70, 42, 22, 0.25)), url("img/header-img-3.jpg");
+}
+
+#header, #header-content {
+  height: 38.5rem;
+}
+
+/*
+Featured
+*/
+.featured {
+  height: 24.75rem;
+}
+
+.featured-img{
+  height: 22.5rem;
+  background-position: center;
+  background-size: cover;
+}
+
+#featured-img-1 {
+  background-image: url("img/featured-img-1.jpg");
+}
+
+#featured-img-2 {
+  background-image: url("img/featured-img-2.jpg");
+}
+
+#featured-img-3 {
+  background-image: url("img/featured-img-3.jpg");
+}
