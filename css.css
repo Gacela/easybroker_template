@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Amiri|Source+Sans+Pro');
 body {
   @apply text-lg;
-  /* background-image: url("Desktop.png");
-  background-position: top center;
-  background-repeat: no-repeat; */
+  background-image: url("Desktop.png");
+  background-position: center 368px;
+  background-repeat: no-repeat;
 }
 
 /*
@@ -103,4 +103,20 @@ Featured
 #featured-img-1:hover, #featured-img-2:hover, #featured-img-3:hover {
   background-position: center, center;
   background-size: auto, cover;
+}
+
+/* Contact */
+#contact {
+  height: 29rem;
+}
+
+#contact-bg {
+  height: 24.5rem;
+}
+
+#contact-img {
+  background-image: url("img/featured-img-3.jpg");
+  height: 27.5rem;
+  background-position: center;
+  background-size: cover;
 }
