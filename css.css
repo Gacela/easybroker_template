@@ -16,8 +16,10 @@ Tailwind CDN overrides
 Text
 */
 
-.text-6xl {
-  font-size: 4rem;
+@media (min-width: 992px) {
+  .text-6xl {
+    font-size: 4rem;
+  }
 }
 
 .text-shadow {
