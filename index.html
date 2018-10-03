@@ -13,16 +13,16 @@
   <body>
     <!-- Menu -->
     <nav class="flex items-center justify-between flex-wrap md:flex-no-wrap py-8 px-6">
-      <div class="lg:flex-no-shrink mr-3 w-full md:w-1/4 lg:w-1/6 flex flex-no-wrap justify-between">
+      <div class="w-full md:w-1/4 lg:w-1/6 flex flex-no-wrap lg:flex-no-shrink mr-3 justify-between">
         <div class="flex items-center">
           <a href="#" class="font-serif text-orange-dark hover:text-orange-darker no-underline text-3xl lg:text-4xl leading-none md:text-center">Nombre de la inmobiliaria</a>
-        </div>
+        </div> <!-- /.items-center -->
         <div class="block md:hidden">
           <button id="nav-icon" class="flex items-center p-3 text-grey-dark hover:text-grey-darker rounded-sm hover:bg-grey-lightest">
             <svg class="fill-current" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="#1040e2"/><path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"/></svg>
           </button>
-        </div>
-      </div>
+        </div> <!-- /.md:hidden -->
+      </div> <!-- /.w-full -->
       <div id="menu" class="w-full md:w-3/4 lg:w-5/6 flex-grow md:flex md:justify-end md:items-center">
         <a href="#" class="block my-6 lg:inline-block md:my-0 text-grey-dark hover:text-grey-darker no-underline md:mx-2 lg:mx-4 xl:mx-6">
           Venta
@@ -43,8 +43,8 @@
           <p>
             lorem@ipsum.com
           </p>
-        </div>
-      </div>
+        </div> <!-- /.w-full -->
+      </div> <!-- /#menu -->
     </nav>
     <!-- Header -->
     <!-- Header Background -->
@@ -56,8 +56,8 @@
           <div id="header-img-1" class="header-img hidden sm:block sm:w-1/3"></div>
           <div id="header-img-2" class="header-img w-full sm:w-1/3 mt-6"></div>
           <div id="header-img-3" class="header-img hidden sm:block sm:w-1/3"></div>
-        </div>
-      </div>
+        </div> <!-- /.lg:w-5/6 -->
+      </div> <!-- /.absolute -->
       <!-- Header Content -->
       <div id="header-content" class="container mx-auto absolute pin w-full flex flex-col">
         <div class="w-2/3 m-auto text-center">
@@ -65,8 +65,10 @@
           <form class="flex flex-wrap mt-6">
             <div class="relative w-full sm:w-1/2">
               <select class="block appearance-none w-full bg-white border border-grey-lighter text-grey-darker leading-tight py-4 px-6 pr-8 rounded-l-sm focus:bg-grey-lighter focus:border-grey shadow focus:shadow-md">
-                <option>Venta</option>
-                <option>Renta</option>
+                <option selected disabled value="1">Venta o renta</option>
+                <option value="2">Venta</option>
+                <option value="3">Renta</option>
+                <option value="4">Renta temporal</option>
               </select>
               <div class="absolute pin-y pin-r flex items-center px-6 text-orange-dark pointer-events-none">
                 <svg class="fill-current h-3 w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
@@ -74,9 +76,10 @@
             </div> <!-- /.relative -->
             <div class="relative w-full sm:w-1/2">
               <select class="block appearance-none w-full bg-white border border-grey-lighter text-grey-darker leading-tight py-4 px-6 pr-8 rounded-r-sm focus:bg-grey-lighter focus:border-grey shadow focus:shadow-md">
-                <option>Casa</option>
-                <option>Departamento</option>
-                <option>Oficina</option>
+                <option selected disabled value="1">Tipo de inmueble</option>
+                <option value="2">Casa</option>
+                <option value="3">Departamento</option>
+                <option value="4">Oficina</option>
               </select>
               <div class="absolute pin-y pin-r flex items-center px-6 text-orange-dark pointer-events-none">
                 <svg class="fill-current h-3 w-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
@@ -164,26 +167,26 @@
         <p class="text-xs text-grey-darker my-3">2 recs. 2 baños 165 m² de constr.</p>
       </a><!-- /.absolute -->
     </div><!-- /.relative -->
-  </div>
+  </div><!-- /.container -->
 
 <!-- Contact -->
   <div id="contact" class="w-full relative my-6">
     <div id="contact-bg" class="hidden sm:block absolute bg-orange-dark w-full my-6">
-    </div>
+    </div><!-- /#contact-bg -->
     <div class="absolute pin container mx-auto">
       <div class="lg:w-2/3 mr-auto flex flex-no-wrap">
         <div id="contact-img" class="w-full"></div>
-      </div>
-    </div>
+      </div> <!-- /.lg:w-2/3 -->
+    </div> <!-- /.absolute -->
     <!-- Contact Content -->
     <div class="container mx-auto absolute pin w-full flex flex-col justify-end">
       <div class="w-full sm:w-2/3 lg:w-1/2 ml-auto mr-4 lg:mr-0 text-center bg-white py-10 px-8 shadow">
         <h2 class="font-serif font-normal text-3xl lg:text-4xl text-orange-dark leading-none">¿Quieres vender o rentar con nosotros?</h1>
           <p class="text-justify text-grey-darkest mt-4">Nosotros te brindamos un servicio personalizado y de calidad para ayudarte con tu búsqueda inmobiliaria. Si necesitas asistencia o tienes preguntas, siéntete libre de contactarnos.</p>
           <p><a href="#" class="no-underline mt-6 inline-block bg-orange-dark text-white leading-tight py-4 px-6 rounded-sm hover:bg-orange-darker shadow-md hover:shadow">Contáctanos</a></p>
-      </div> <!-- /.w-2/3 -->
-    </div> <!-- /#header-content -->
-  </div> <!-- /.relative -->
+      </div> <!-- /.sm:w-2/3 -->
+    </div> <!-- /.container -->
+  </div> <!-- /#contact -->
 
   <!-- footer -->
 
@@ -198,7 +201,7 @@
           <p class="mt-4"><a href="#" class="text-grey hover:text-grey-dark no-underline">
             Renta
           </a></p>
-        </div>
+        </div> <!-- /.md:w-1/2 -->
         <div class="w-full md:w-1/2  px-6">
           <p class="mt-4"><a href="#" class="text-grey hover:text-grey-dark no-underline">
             ¿Quiénes somos?
@@ -206,21 +209,21 @@
           <p class="mt-4"><a href="#" class="text-grey hover:text-grey-dark no-underline">
             Contacto
           </a></p>
-        </div>
-      </div>
+        </div> <!-- /.md:w-1/2 -->
+      </div> <!-- /.w-1/2 -->
       <div class="w-1/2 flex flex-wrap">
         <h3 class="inline-block w-full px-6 font-serif font-normal text-xl leading-none mt-4">Contacto</h3>
         <div class="w-full md:w-1/2  px-6 text-grey-light">
           <p class="mt-4">Av. Insurgentes Sur 0000, 4º Piso
           <br>Col. Condesa, 00000, Ciudad de México</p>
-        </div>
+        </div> <!-- /.md:w-1/2 -->
         <div class="w-full md:w-1/2  px-6 text-grey-light">
           <p class="mt-4">Teléfono: 55555-55555</p>
           <p class="mt-4">Correo: lorem@ipsum.com</p>
-        </div>
-      </div>
+        </div> <!-- /.md:w-1/2 -->
+      </div> <!-- /.w-1/2 -->
       <p class="inline-block w-full text-center text-xs mt-6 mb-4 text-grey-light">© 2018 Nombre de la inmobiliaria</p>
-    </div>
+    </div> <!-- /.container -->
   </footer>
 
   </body>
